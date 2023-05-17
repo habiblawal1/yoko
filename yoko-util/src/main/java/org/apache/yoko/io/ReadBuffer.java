@@ -31,7 +31,7 @@ public final class ReadBuffer extends Buffer<ReadBuffer> {
 
     public byte readByte() { return core.data[position++]; }
 
-    public char readByteAsChar() { return (char) (core.data[position++]&0xff); }
+    public char readByteAsChar() { return (char) core.data[position++]; }
 
     public byte[] readBytes(byte[] buffer) { return readBytes(buffer, 0, buffer.length); }
 
